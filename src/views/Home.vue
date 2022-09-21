@@ -1,18 +1,19 @@
 <template>
   <div class="home">
+    <!-- 在这里使用自定义组件 -->
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <IButton size="large">你好</IButton>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import IButton from '@/components/IButton.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    IButton
   }
 }
 </script>
