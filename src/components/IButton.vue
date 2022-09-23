@@ -7,19 +7,12 @@
 </template>
 
 <script>
-function oneOf(value, arr){
-  if(arr.includes(value)){
-    return true;
-  }else{
-    return false;
-  }
-}
 export default {
   name: 'iButton',
   props: {
     size:{
       validator(value){
-          return oneOf(value, ['small', 'large', 'default']);
+        return ['small', 'large', 'default'].includes(value);
       },
       default:'default'
     },
