@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <button :class="'i-button-size-'+size" :disabled="disabled">
+      <slot name="icon"></slot>
       <slot></slot>
     </button>
   </div>
